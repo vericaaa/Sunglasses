@@ -1,0 +1,459 @@
+
+
+
+
+
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,500&display=swap&subset=latin-ext');
+
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.8rem;  
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.6rem;
+    letter-spacing: 0.8;
+    color: #2C2D3C;
+}
+
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    text-transform: capitalize;
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    letter-spacing: 1.06px;
+}
+
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display:flexbox;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.justify-start{
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-flex-pack: start;
+}
+
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+
+.one-column{
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -moz-flex: 0 0 100%;
+    -ms-flex:0 0 100%;
+}
+
+.two-column{
+    flex: 0 0 48%;
+    -webkit-flex: 0 0 48%;
+    -moz-flex: 0 0 48%;
+    -ms-flex:0 0 48%;
+}
+
+.three-column{
+    flex: 0 0 32%;
+    -webkit-flex: 0 0 32%;
+    -moz-flex: 0 0 32%;
+    -ms-flex:0 0 32%;
+}
+
+
+.four-column{
+    flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex:0 0 24%;
+}
+
+/**************HEADER****************/
+
+header{
+    background-color: #EBB970;
+}
+
+header .main-menu li{
+    list-style: none;
+    margin-left: 67px;
+}
+
+header .main-menu li a{
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.46px;
+    color: #2C2D3C;
+    padding: 20px 0;
+    transition: all 0.5s linear;
+    position: relative;
+}
+
+
+
+header .main-menu li a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #2C2D3C;
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .main-menu li a.activ:after,
+header .main-menu li a:hover:after{
+    width: 100%;
+}
+
+
+
+/****************HOME*******************/
+
+.home{
+    background: no-repeat fixed center center;
+    background-size: cover;
+    margin-bottom: 86px;
+}
+
+.home ul{
+    padding: 42px 23px 62px 38px;  
+    list-style: none;
+    font-size: 6rem;
+    line-height: 8rem;
+    letter-spacing: 1.99px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    background-color: #2C2D3C;
+    margin: 219px 0 189px;
+    display: inline-block;
+}
+
+.home ul li{
+    transition: all 0.3s linear;
+}
+
+.home ul:hover li{
+    transform: scale(1.3);
+}
+
+/********************ABOUT*********************/
+
+.about .about-item .about-item-title{
+    display: inline-block;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #EBB970;
+    margin-bottom: 20px;
+} 
+
+.about .about-item .about-item-text{
+    margin-bottom:22px; 
+}
+
+.about .about-item .about-item-link{
+    padding: 10px 13px;
+    background-color: #EBB970;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: all 0.5s linear;
+}
+
+.about .about-item .about-item-link:hover{
+    border-radius: 20px;
+    transition: all 0.5s linear;
+}
+
+.about .about-item .about-image img{
+    display: block;
+    width: 100%;
+}
+
+/******************SERVICES**********************/
+
+.services{
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+.services h1{
+    display: inline-block;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #EBB970;
+    margin-bottom: 44px;
+}
+
+.services .services-item{
+    text-align: center;
+    background-color: rgb(44, 45, 60);
+    padding: 49px 17px;
+} 
+
+.services .services-item .services-item-link{
+    margin-bottom: 17px;
+}
+
+.services .services-item .services-item-link span{
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    line-height: 88px;
+    text-align: center;
+    background-color: #EBB970;
+    color: #fff;
+    margin-bottom: 17px;
+    font-size: 4rem;
+    transition:  0.5s linear;
+}
+
+.services .services-item .services-item-link:hover span{
+    transform: scale(1.2);
+}
+
+.services .services-item .services-item-link a{
+    display: block;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+}
+
+.services .services-item p{
+    color: #fff;
+}
+
+/*******************ACHIEVEMENTS********************/
+
+.achievements{
+    background: no-repeat scroll center center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+.achievements .achievements-items{
+    padding: 169px 0 142px;
+}
+
+.achievements .achievements-items h1{
+    font-size: 5rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.achievements .achievements-items p{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*********************PRODUCTS********************/
+
+.products{
+    text-align: center;
+    margin-bottom: 151px;
+}
+
+.products .products-title{
+    display: inline-block;
+    border-bottom: 2px solid #EBB970; 
+    padding-bottom: 22px;
+    margin-bottom: 57px;
+}
+
+.products .products-item .products-item-image img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+
+.products .products-item .products-item-image{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+figure:hover img{
+    transform: scale(1.1);
+}
+
+.products .products-item .products-item-image .description{
+    position: absolute;
+    top: 230px;
+    left: 2px;
+    padding: 23px 25px 23px 8px;
+    background-color: #EBB970;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    display: none;
+}
+
+.products .products-item .products-item-image:hover .description{
+    display: block;
+}
+
+.products .products-item .products-item-text .brand{
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.products .products-item .products-item-text .price{
+    font-size: 1.6rem;
+}
+
+/***************CONTACT****************/
+
+.contact{
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+.contact .contact-title{
+    display: inline-block;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #EBB970;
+    margin-bottom: 69px;
+}
+
+.contact .contact-form .form-text{
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(44, 45, 60, 0.36);
+    margin-bottom: 36px;
+    padding: 10px 28px 10px 17px;
+}
+
+.contact .contact-info{
+    text-align: left;
+}
+
+.contact .contact-info div{
+    margin-bottom: 20px;
+}
+
+.contact .contact-info .icon{
+    margin-right: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.contact .contact-info a{
+    font-size: 1.6rem;
+    text-transform: none;
+    color: #2C2D3C;
+}
+
+.contact button{
+    padding: 10px 13px;
+    background-color: #EBB970;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+}
+
+.contact button:hover{
+    border-radius: 20px;
+    transition: all 0.5s linear;
+}
+
+/**************FOOTER*****************/
+
+footer{
+    background-color: #EBB970;
+}
+
+footer .logo-footer{
+    padding: 17px 0 15px;
+}
+
+footer .social li{
+    list-style: none;
+    margin-left: 31px;
+}
+
+footer .social li a{
+    color: #2C2D3C;
+    transition: all 0.2s linear;
+}
+
+footer .social li a:hover{
+    transform: translateY(-5px) scale(1.2);
+}
